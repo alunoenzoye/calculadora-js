@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet"></script>
+</head>
+</head>
+<body>
+<div class="calculadora">
+    <h1>Calculadora simples</h1>
+
+    <select class="select-operador" name="operador" id="operador">
+        <option value="soma">Soma</option>
+        <option value="sub">Subtração</option>
+        <option value="div">Divisão</option>
+        <option value="mult">Multiplicação</option>
+        <option value="potencia">Potência</option>
+        <option value="porcentagem">Porcentagem</option>
+    </select>
+
+    <div class="campo-numero">
+        <h2>Numero 1</h2>
+        <label for="numero1"></label>
+        <input type="number" id="numero1">
+    </div>
+
+    <div class="campo-numero">
+        <h2>Numero 2</h2>
+        <label for="numero2"></label>
+        <input type="number" id="numero2">
+    </div>
+
+    <button class="btn-calcular" onclick="calcularNumero()">Calcular</button>
+
+    <h3 id="resultado"></h3>
+</div>
+<script src="script/script.js"></script>
+</body>
+</html>
